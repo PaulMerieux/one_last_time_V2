@@ -11,6 +11,8 @@ def load_data(path: str = "data/train_data.csv") -> pd.DataFrame:
     """
     df = pd.read_csv(path)
 
+    print("il y en a raaasss le cul")
+
     # basic sanity checks
     missing = [c for c in EXPECTED_CATEGORICAL if c not in df.columns]
     if missing:
