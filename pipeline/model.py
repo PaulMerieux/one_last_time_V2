@@ -35,3 +35,5 @@ def train_model(X_train, y_train, preproc, seed: int = 42):
     pipe = Pipeline([("preproc", preproc), ("model", clf)])
     pipe.fit(X_train, y_train)
     return pipe
+
+    "Le COUCOU nous casse les COUCOUILLES une dernière fois"
